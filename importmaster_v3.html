@@ -205,7 +205,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
 </head>
 <body>
 
-<!-- TC BAR -->
 <div class="tc-bar" id="tc-bar">
   💱 Tipo de cambio global:
   <strong>USD 1 = MXN</strong>
@@ -214,7 +213,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   <span style="margin-left:auto;font-size:10px;opacity:0.6">Se aplica a toda la app</span>
 </div>
 
-<!-- SIDEBAR -->
 <nav class="sidebar">
   <div class="logo">
     <img id="logo-img" src="" alt="Orvia">
@@ -263,10 +261,8 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   </div>
 </nav>
 
-<!-- MAIN CONTENT -->
 <main class="main" id="main-content">
 
-<!-- ===== DASHBOARD ===== -->
 <div id="page-dashboard" class="page active">
   <div class="page-header">
     <div class="page-title">Dashboard <span>Orvia</span></div>
@@ -284,7 +280,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   </div>
 </div>
 
-<!-- ===== FABRICAS ===== -->
 <div id="page-fabricas" class="page">
   <div class="page-header">
     <div class="page-title">Mis <span>Fábricas</span></div>
@@ -302,7 +297,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   <div class="card-grid" id="grid-fabricas"></div>
 </div>
 
-<!-- ===== TRANSPORTISTAS ===== -->
 <div id="page-transportistas" class="page">
   <div class="page-header">
     <div class="page-title">Mis <span>Transportistas</span></div>
@@ -314,7 +308,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   <div class="card-grid" id="grid-transportistas"></div>
 </div>
 
-<!-- ===== BUSCAR ===== -->
 <div id="page-buscar" class="page">
   <div class="page-header"><div class="page-title">Buscar <span>Proveedor</span></div></div>
   <div class="card" style="margin-bottom:22px">
@@ -332,7 +325,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   <div id="search-results"></div>
 </div>
 
-<!-- ===== COMPARAR ===== -->
 <div id="page-comparar" class="page">
   <div class="page-header"><div class="page-title">Comparar <span>Proveedores</span></div></div>
   <div class="card" style="margin-bottom:22px">
@@ -346,7 +338,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   <div id="comparacion-resultado"></div>
 </div>
 
-<!-- ===== ORDENES ===== -->
 <div id="page-ordenes" class="page">
   <div class="page-header">
     <div class="page-title">Órdenes de <span>Compra</span></div>
@@ -374,7 +365,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   </div>
 </div>
 
-<!-- ===== PRODUCTOS ===== -->
 <div id="page-productos" class="page">
   <div class="page-header">
     <div class="page-title">Mis <span>Productos</span></div>
@@ -400,7 +390,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   </div>
 </div>
 
-<!-- ===== VENTAS ===== -->
 <div id="page-ventas" class="page">
   <div class="page-header">
     <div class="page-title">Mis <span>Ventas</span></div>
@@ -426,7 +415,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   </div>
 </div>
 
-<!-- ===== CALCULADORA ===== -->
 <div id="page-calculadora" class="page">
   <div class="page-header"><div class="page-title">Calculadora <span>de Costos</span></div></div>
   <div class="tabs">
@@ -484,15 +472,12 @@ tr:hover td{background:rgba(255,255,255,0.02);}
   </div>
 </div>
 
-<!-- ===== CONFIG / MI EMPRESA ===== -->
-<!-- ===== CBM CALCULATOR ===== -->
 <div id="page-cbm" class="page">
   <div class="page-header">
     <div class="page-title">Calculadora <span>CBM</span></div>
     <button class="btn secondary" onclick="limpiarCBM()">🗑 Limpiar</button>
   </div>
   <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:22px">
-    <!-- LEFT: Packages input -->
     <div>
       <div class="card">
         <div class="card-title">📦 Paquetes / Cajas</div>
@@ -503,7 +488,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
         <div id="cbm-rows"></div>
         <button class="btn secondary sm" onclick="addCBMRow()" style="margin-top:10px">+ Agregar caja</button>
       </div>
-      <!-- Cotizador de transportista -->
       <div class="card">
         <div class="card-title">🚢 Cotizador de Flete</div>
         <div style="display:flex;flex-direction:column;gap:12px">
@@ -531,7 +515,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
         </div>
       </div>
     </div>
-    <!-- RIGHT: Results -->
     <div>
       <div class="calc-result" style="margin-bottom:16px">
         <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:16px;margin-bottom:18px">📐 Resultado CBM</div>
@@ -541,7 +524,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
         <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:16px;margin-bottom:18px">💰 Cotización de Flete</div>
         <div id="cbm-flete-lines"></div>
       </div>
-      <!-- Costo unitario por producto -->
       <div class="card" style="margin-top:16px">
         <div class="card-title">📊 Costo de flete por pieza</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
@@ -603,9 +585,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
 
 </main>
 
-<!-- ALL MODALS -->
-
-<!-- PROVEEDOR MODAL -->
 <div class="modal-overlay" id="modal-proveedor">
 <div class="modal wide">
   <div class="modal-title"><span id="mprov-title">Nueva Fábrica</span><span class="modal-close" onclick="closeModal('modal-proveedor')">✕</span></div>
@@ -619,7 +598,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
     <div class="field"><label>Email</label><input type="email" id="prov-email" placeholder="supplier@factory.com"></div>
     <div class="field" id="prov-moq-field"><label>MOQ (mínimo de compra)</label><input type="text" id="prov-moq" placeholder="50 piezas, $500 USD..."></div>
     <div class="field"><label>Tiempo de entrega promedio</label><input type="text" id="prov-tiempo" placeholder="15-20 días hábiles..."></div>
-    <!-- Transportista extras -->
     <div class="field form-full" id="prov-dir-field" style="display:none"><label>Dirección completa</label><textarea id="prov-direccion" placeholder="Dirección completa de la empresa..."></textarea></div>
     <div class="field" id="prov-tipo-envio-field" style="display:none"><label>Tipos de envío</label><input type="text" id="prov-tipo-envio" placeholder="Aéreo, Marítimo, DDP, FCL, LCL..."></div>
     <div class="field" id="prov-precio-kg-field" style="display:none"><label>Precio por 0.1 CBM (MXN)</label><input type="text" id="prov-precio-kg" placeholder="$350 MXN por 0.1 CBM..."></div>
@@ -655,7 +633,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
 </div>
 </div>
 
-<!-- ORDEN DE COMPRA MODAL -->
 <div class="modal-overlay" id="modal-orden">
 <div class="modal wide">
   <div class="modal-title"><span id="morden-title">Nueva Orden de Compra (PO)</span><span class="modal-close" onclick="closeModal('modal-orden')">✕</span></div>
@@ -709,7 +686,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
 </div>
 </div>
 
-<!-- PRODUCTO MODAL -->
 <div class="modal-overlay" id="modal-producto">
 <div class="modal">
   <div class="modal-title"><span id="mprod-title">Nuevo Producto</span><span class="modal-close" onclick="closeModal('modal-producto')">✕</span></div>
@@ -750,7 +726,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
 </div>
 </div>
 
-<!-- VENTA MODAL -->
 <div class="modal-overlay" id="modal-venta">
 <div class="modal">
   <div class="modal-title"><span>Registrar Venta</span><span class="modal-close" onclick="closeModal('modal-venta')">✕</span></div>
@@ -785,7 +760,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
 </div>
 </div>
 
-<!-- CAMBIAR ESTADO ORDEN MODAL -->
 <div class="modal-overlay" id="modal-status">
 <div class="modal" style="width:400px">
   <div class="modal-title"><span>Actualizar Estado de Orden</span><span class="modal-close" onclick="closeModal('modal-status')">✕</span></div>
@@ -809,7 +783,6 @@ tr:hover td{background:rgba(255,255,255,0.02);}
 </div>
 </div>
 
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
 <script>
@@ -864,6 +837,7 @@ function navigate(el){
   if(page==='productos') renderProductos();
   if(page==='ventas') renderVentas();
   if(page==='calculadora'){ document.getElementById('c-tc').value=getTCGlobal(); calcular(); }
+  if(page==='cbm') initCBMPage(); // <-- Condición agregada aquí
   if(page==='config') loadConfig();
 }
 
@@ -901,14 +875,11 @@ function openProveedorModal(data, tipo){
   document.getElementById('prov-dir-field').style.display = isTrans?'flex':'none';
   document.getElementById('prov-tipo-envio-field').style.display = isTrans?'flex':'none';
   document.getElementById('prov-precio-kg-field').style.display = isTrans?'flex':'none';
-  document.getElementById('prov-minimo-field').style.display = isTrans?'flex':'none';
   document.getElementById('prov-moq-field').style.display = isTrans?'none':'flex';
-  document.getElementById('prov-productos-field').style.display = isTrans?'none':'block';
 
   if(!data){
-    clearFields(['prov-id','prov-vendedor','prov-fabrica','prov-ciudad','prov-provincia','prov-whatsapp','prov-email','prov-moq','prov-tiempo','prov-direccion','prov-tipo-envio','prov-precio-kg','prov-minimo','prov-categorias','prov-precios','prov-notas','prov-catalogo']);
+    clearFields(['prov-id','prov-vendedor','prov-fabrica','prov-ciudad','prov-provincia','prov-whatsapp','prov-email','prov-moq','prov-tiempo','prov-direccion','prov-tipo-envio','prov-precio-kg','prov-categorias','prov-precios','prov-notas','prov-catalogo']);
     document.getElementById('prov-rating').value=0; setRatingDisplay(0);
-    provProdRows=[]; renderProvProdRows();
   } else {
     document.getElementById('prov-id').value=data.id;
     document.getElementById('prov-tipo').value=data.tipo;
@@ -923,16 +894,12 @@ function openProveedorModal(data, tipo){
     document.getElementById('prov-direccion').value=data.direccion||'';
     document.getElementById('prov-tipo-envio').value=data.tipoEnvio||'';
     document.getElementById('prov-precio-kg').value=data.precioKg||'';
-    document.getElementById('prov-minimo').value=data.minimo||'';
     document.getElementById('prov-categorias').value=data.categorias||'';
     document.getElementById('prov-precios').value=data.precios||'';
     document.getElementById('prov-notas').value=data.notas||'';
     document.getElementById('prov-catalogo').value=data.catalogo||'';
     document.getElementById('prov-rating').value=data.rating||0;
     setRatingDisplay(data.rating||0);
-    // Load productos rows
-    provProdRows = data.provProds ? JSON.parse(JSON.stringify(data.provProds)) : [];
-    renderProvProdRows();
   }
   openModal('modal-proveedor');
 }
@@ -953,13 +920,11 @@ function guardarProveedor(){
     direccion:document.getElementById('prov-direccion').value.trim(),
     tipoEnvio:document.getElementById('prov-tipo-envio').value.trim(),
     precioKg: document.getElementById('prov-precio-kg').value.trim(),
-    minimo:   document.getElementById('prov-minimo').value.trim(),
     categorias:document.getElementById('prov-categorias').value.trim(),
     precios:  document.getElementById('prov-precios').value.trim(),
     notas:    document.getElementById('prov-notas').value.trim(),
     catalogo: document.getElementById('prov-catalogo').value.trim(),
     rating:   parseInt(document.getElementById('prov-rating').value)||0,
-    provProds: isTrans ? [] : getProvProdRows(),
   };
   if(!data.vendedor&&!data.fabrica){ showToast('Ingresa al menos nombre del vendedor o empresa','error'); return; }
   if(id){ const i=DB.proveedores.findIndex(p=>p.id===id); DB.proveedores[i]=data; }
@@ -997,14 +962,6 @@ function proveedorCard(p){
     </div>
     ${p.categorias?`<div style="margin-top:8px;font-size:10px;color:var(--text2)">🏷 ${p.categorias}</div>`:''}
     ${p.precios?`<div style="font-size:10px;color:var(--accent2);margin-top:3px">💵 ${p.precios}</div>`:''}
-    ${p.provProds&&p.provProds.length>0?`<div style="margin-top:10px;border-top:1px solid var(--border);padding-top:10px">
-      <div style="font-size:9px;color:var(--text2);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px">Productos</div>
-      ${p.provProds.slice(0,3).map(pr=>`<div style="display:flex;justify-content:space-between;font-size:11px;padding:3px 0;border-bottom:1px solid rgba(42,42,61,0.3)">
-        <span>${pr.nombre}</span>
-        <span style="color:var(--accent2)">${pr.precio?'USD '+parseFloat(pr.precio).toFixed(2):''} ${pr.moq?'· MOQ '+pr.moq:''}</span>
-      </div>`).join('')}
-      ${p.provProds.length>3?`<div style="font-size:10px;color:var(--text2);margin-top:4px">+${p.provProds.length-3} más...</div>`:''}
-    </div>`:''}
     ${p.catalogo?`<div style="margin-top:8px"><span class="catalog-badge" onclick="verCatalogo('${p.id}')">📋 Ver Catálogo</span></div>`:''}
     <div class="provider-actions">
       <button class="btn sm secondary" onclick='openProveedorModal(${JSON.stringify(p).replace(/\'/g,"&#39;")})'>Editar</button>
@@ -2144,13 +2101,6 @@ function limpiarCBM(){
   document.getElementById('cbm-extra').value='';
   document.getElementById('cbm-piezas').value='';
   calcCBMTotals();
-}
-
-// Extend navigate to init CBM page
-const _origNavigate = navigate;
-function navigate(el){
-  _origNavigate(el);
-  if(el.dataset.page==='cbm') initCBMPage();
 }
 
 // Init CBM rows on load
